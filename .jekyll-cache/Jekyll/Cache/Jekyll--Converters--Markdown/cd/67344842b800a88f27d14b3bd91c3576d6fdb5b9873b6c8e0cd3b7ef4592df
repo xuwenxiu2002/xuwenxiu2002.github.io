@@ -1,0 +1,69 @@
+I"�	<p><br /></p>
+
+<h1 id="必做部分">必做部分</h1>
+
+<h2 id="1安装git">1.安装git</h2>
+<p><img src="/assets/images/GIT.png" alt="tree" /></p>
+
+<h2 id="2创建版本库">2.创建版本库</h2>
+
+<h2 id="3版本控制">3.版本控制</h2>
+
+<h2 id="4版本回退">4.版本回退</h2>
+
+<h2 id="5工作区和暂存区">5.工作区和暂存区</h2>
+
+<h2 id="6管理修改">6.管理修改</h2>
+
+<h2 id="7撤销修改">7.撤销修改</h2>
+
+<h2 id="8删除文件">8.删除文件</h2>
+
+<h2 id="9远程仓库">9.远程仓库</h2>
+
+<h2 id="10添加到远程仓库">10.添加到远程仓库</h2>
+
+<h2 id="11从远程仓库克隆">11.从远程仓库克隆</h2>
+
+<h1 id="二选做部分">二、选做部分</h1>
+
+<h2 id="1分支管理相关">1.分支管理相关</h2>
+
+<h3 id="创建合并分支">创建合并分支</h3>
+
+<h3 id="解决冲突">解决冲突</h3>
+
+<h1 id="三实验过程">三、实验过程</h1>
+
+<h1 id="四总结">四、总结</h1>
+<p>大小写是区分
+Git bash的vi/vim编译器界面不知道怎么办。
+去网络上找的，vi加文件名，进入编辑模式；i，开始在光标左边编辑，esc,shift,zz,回到命令模式；
+Git push
+撤销操作，
+情况一：文件被修改了，但未执行git add操作
+git checkout filename
+但是，在我自己的界面是restore，也可以实现相同的功能
+情况二：文件执行了git add操作，但想撤销对其的修改
+git reset HEAD fileName
+git checkout filename
+git bash的一些命令并不理解
+1．	cd : change directory的简写，改变目录的意思，就是切换到哪个目录下， 
+2．	cd .. 回退到上一个目录。我们在写js,或css时，我们引入文件时，.. 表示的就是上一个目录, 所以 cd .. 回退到上一个目录就很好理解了。注意，cd 和两个点点..之间有一个空格, 
+3．	 pwd : print working directory, 打印工作目录，它会显示我们当前所在的目录路径。
+4．	ls: list, 列出当前目录中的所有文件，只不过ll(两个ll)列出的内容更为详细。
+5．	rm，remove，删除一个文件, rm index.js 就会把index.js文件删除.
+6．	mkdir: make directory 新建一个目录,就是新建一个文件夹</p>
+
+<p>遇到git报错ssh: connect to host github.com port 22: Connection timed out
+直接找了网络帖子
+Host github.com
+User 注册github的邮箱
+Hostname ssh.github.com
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/id_rsa
+Port 443
+再执行
+ssh -T git@github.com 
+回车后，输入之前设置好的密码即可</p>
+:ET
